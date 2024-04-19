@@ -1,8 +1,46 @@
-body {
-  font-family: "Unbounded", sans-serif;
+:root {
+  --light-color: #f4e9e4;
+  --accent-color: #f2b3ec;
+  --primary-color: #1023a1;
+  --secondary-color: #d68201;
+  --heading-font: "Kalnia", serif;
+  --primary-font: "Unbounded", sans-serif;
 }
+
+body {
+  font-family: var(--primary-font);
+}
+h1,
+h2,
+p {
+  color: var(--primary-color);
+}
+
 h1 {
-  font-family: "Kalnia", serif;
+  font-family: var(--heading-font);
   font-weight: 600;
-  font-size: 48px;
+  font-size: 88px;
+}
+.hero {
+  background: #fcf7f7;
+  text-align: center;
+  padding: 160px 20px;
+}
+.introduction {
+  font-size: 36px;
+}
+.tag-line {
+  color: var(--secondary-color);
+}
+
+.btn-branding {
+  background: var(--accent-color);
+  color: var(--primary-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 12px 20px;
+}
+.btn-branding:hover {
+  border: 2px solid var(--accent-color);
+  color: var(--secondary-color);
 }
