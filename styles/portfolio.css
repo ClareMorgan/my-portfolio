@@ -169,9 +169,16 @@ h2 {
   }
 }
 @media (max-width: 992px) {
+  .hero {
+    padding-top: 120px;
+  }
   .about-section {
     text-align: center;
-    padding: 0;
+    padding-top: 120px;
+  }
+  .avatar-image {
+    max-width: 500px;
+    margin: 10px auto;
   }
   .row {
     --bs-gutter-x: 0;
