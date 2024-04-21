@@ -47,12 +47,12 @@ h2 {
 }
 .navbar-brand,
 .nav-link {
-  color: var(--primary-color);
+  color: var(--light-color);
   transition: all 200ms ease;
 }
 .navbar-brand:hover,
 .nav-link:hover {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 .navbar-nav a.active {
   color: var(--accent-color) !important;
@@ -76,7 +76,7 @@ h2 {
     rgba(244, 233, 228, 1) 70%
   );
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 20px 160px 20px;
 }
 .hero p {
   font-size: 36px;
@@ -100,7 +100,7 @@ h2 {
 }
 .btn-branding:hover {
   border: 2px solid var(--accent-color);
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .project-links {
   text-decoration: none;
@@ -133,6 +133,9 @@ h2 {
 }
 .about-section-content {
   margin: 30px;
+}
+.avatar-image {
+  margin: 30px 10px;
 }
 .work-page,
 .contact-page {
