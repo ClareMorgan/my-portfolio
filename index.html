@@ -24,8 +24,41 @@
     <title>Clare Morgan</title>
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <i class="fa-brands fa-pagelines"></i>
+            Clare Morgan</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/about.html">About</a>
+              <a class="nav-link" href="/work.html">Work</a>
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="spacer">
+        <img class="img-fluid" src="waves.svg" alt="" />
+      </div>
+    </header>
     <div class="hero">
-      <p class="mb-0">Hello, I am</p>
+      <p class="mb-0">Hi, I'm</p>
       <h1>Clare Morgan</h1>
       <h2 class="mb-5">A front-end developer based in Edinburgh</h2>
       <a href="#" class="btn btn-branding">Contact Me</a>
@@ -36,13 +69,11 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <div class="img-border p-1">
-            <img
-              src="images/weather-app.png"
-              class="img-fluid p-1 d-none d-sm-block"
-              alt="Screenshot of weather app project"
-            />
-          </div>
+          <img
+            src="images/weather-app.png"
+            class="img-fluid p-1 d-none d-sm-block"
+            alt="Screenshot of weather app project"
+          />
         </div>
         <div class="col-sm-6">
           <h2 class="mb-3">Weather App</h2>
