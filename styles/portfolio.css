@@ -14,11 +14,14 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   color: var(--primary-color);
   font-family: var(--heading-font);
+}
+h5 {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 24px;
 }
 p {
   color: var(--primary-color);
@@ -138,16 +141,15 @@ footer .social-links i:hover {
   padding: 10px 20px 160px 20px;
 }
 .hero p,
-.about-hero p {
+.heading {
   font-size: 36px;
 }
-.hero h1,
-.about-hero h1 {
+.hero h1 {
   font-weight: 600;
   font-size: 88px;
 }
 .hero h2,
-.about-hero h2 {
+.content h2 {
   color: var(--secondary-color);
   font-family: var(--primary-font);
   font-size: 24px;
@@ -177,8 +179,7 @@ footer .social-links i:hover {
   color: var(--secondary-color);
   transform: translate(5px);
 }
-
-.about-section {
+.content-container {
   background: rgb(252, 247, 247);
   background: linear-gradient(
     180deg,
@@ -187,23 +188,17 @@ footer .social-links i:hover {
   );
   padding: 0 100px;
 }
-
+.content h1 {
+  font-size: 66px;
+}
 .avatar-image {
   margin: 30px 10px;
 }
-.work-page,
-.contact-page {
-  background: rgb(252, 247, 247);
-  background: linear-gradient(
-    180deg,
-    rgba(252, 247, 247, 1) 10%,
-    rgba(244, 233, 228, 1) 70%
-  );
+.work-page-description {
+  font-size: 14px;
+  opacity: 70%;
 }
 @media (max-width: 576px) {
-  h1 {
-    font-size: 70px !important;
-  }
   p {
     font-size: 18px;
   }
@@ -213,22 +208,29 @@ footer .social-links i:hover {
   .hero {
     padding: 90px 20px;
   }
+  .hero h1 {
+    font-size: 70px;
+  }
   .hero h2,
-  .about-hero h2 {
+  .content h2 {
     font-size: 20px !important;
   }
   .hero p,
-  .about-hero p {
+  .heading {
     font-size: 24px;
   }
-  .about-section {
+  .content-container {
     padding: 20px;
+  }
+  .work-page-heading {
+    font-size: 48px !important;
   }
 }
 @media (max-width: 768px) {
   h1,
   h2,
   h4,
+  h5,
   p,
   a {
     text-align: center;
@@ -239,9 +241,15 @@ footer .social-links i:hover {
   h4 {
     font-size: 34px;
   }
+  h5 {
+    font-size: 18px;
+  }
   .contact-box h4,
   .contact-box p {
     text-align: center;
+  }
+  .content h1 {
+    font-size: 56px;
   }
 }
 @media (max-width: 992px) {
@@ -251,7 +259,7 @@ footer .social-links i:hover {
   footer .contact-box {
     padding: 20px 30px;
   }
-  .about-section {
+  .content {
     text-align: center;
     padding-top: 120px;
   }
