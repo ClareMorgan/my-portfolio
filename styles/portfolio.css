@@ -101,12 +101,11 @@ footer .secondary-btn {
   margin-top: 25px;
 }
 footer .secondary-btn:hover {
-  background: var(--primary-color);
-  color: var(--accent-color);
+  background: var(--secondary-color);
+  color: var(--light-color);
 }
 footer .contact-box a {
   text-align: center;
-  max-width: 157px;
 }
 footer .mailto-link {
   margin-bottom: 20px;
@@ -222,7 +221,7 @@ footer .social-links i:hover {
   .content-container {
     padding: 20px;
   }
-  .work-page-heading {
+  .page-heading {
     font-size: 48px !important;
   }
 }
