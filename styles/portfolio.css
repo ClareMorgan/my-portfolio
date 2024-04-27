@@ -129,6 +129,11 @@ footer .footer-link a {
 footer .footer-link a:hover {
   color: var(--primary-color);
 }
+form {
+  border-radius: 10px;
+  border: 2px solid var(--accent-color);
+}
+
 .hero {
   background: rgb(252, 247, 247);
   background: linear-gradient(
@@ -165,18 +170,26 @@ footer .footer-link a:hover {
   border: 2px solid var(--accent-color);
   color: var(--primary-color);
 }
-.project-links {
+.project-links,
+.contact-links {
   text-decoration: none;
   color: var(--accent-color);
-  font-size: 30px;
+
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
   position: relative;
   display: block;
 }
-.project-links:hover {
+.project-links:hover,
+.contact-links:hover {
   font-style: italic;
   color: var(--secondary-color);
   transform: translate(5px);
+}
+.project-links {
+  font-size: 30px;
+}
+.contact-links {
+  font-size: 24px;
 }
 .content-container {
   background: rgb(252, 247, 247);
@@ -188,7 +201,7 @@ footer .footer-link a:hover {
   padding: 0 100px;
 }
 .content h1 {
-  font-size: 66px;
+  font-size: 56px;
 }
 .about-me {
   background: rgba(252, 247, 247, 0.6);
@@ -206,6 +219,16 @@ footer .footer-link a:hover {
 .work-page-description {
   font-size: 14px;
   opacity: 70%;
+}
+.form-label {
+  display: block;
+  color: var(--primary-color);
+}
+.form-input {
+  line-height: 1.8;
+  width: 100%;
+  color: var(--secondary-color);
+  background: rgba(252, 247, 247, 0.6);
 }
 @media (max-width: 576px) {
   p {
@@ -256,17 +279,18 @@ footer .footer-link a:hover {
 @media (max-width: 992px) {
   h1,
   h2,
+  h3,
   h4,
   h5,
   p,
   a {
     text-align: center;
   }
-  .hero {
-    padding-top: 120px;
-  }
   footer .contact-box {
     padding: 20px 30px;
+  }
+  .hero {
+    padding-top: 120px;
   }
   .content {
     text-align: center;
@@ -278,5 +302,8 @@ footer .footer-link a:hover {
   }
   .row {
     --bs-gutter-x: 24px;
+  }
+  .contact-links {
+    font-size: 18px !important;
   }
 }

@@ -75,44 +75,84 @@
         <p class="heading mb-0">Thanks for visiting...</p>
         <h1 class="page-heading mt-0 mb-5">Here's how to contact me</h1>
       </div>
-    </div>
-    <footer>
-      <div class="social-links mb-3">
-        <a
-          href="/contact.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Contact Clare"
-        >
-          <i class="fa-solid fa-envelope"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/clare-morgan-21588a15b/"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Clare's Linkdin"
-        >
-          <i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a
-          href="https://github.com/ClareMorgan"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Clare's GitHub"
-        >
-          <i class="fa-brands fa-github"></i
-        ></a>
+      <div class="row">
+        <div class="col-lg-8">
+          <form
+            action="https://formspree.io/f/xkndywqa"
+            method="POST"
+            class="p-3 mb-3"
+          >
+            <div class="mb-3">
+              <label class="form-label"> Your email: </label>
+              <input
+                type="email"
+                name="_replyto"
+                class="form-input"
+                required
+                autofocus
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label"> Your message: </label>
+              <textarea
+                name="message"
+                class="form-input"
+                required
+                style="height: 100px"
+              >
+              </textarea>
+            </div>
+            <button type="submit" class="btn btn-branding">Send</button>
+          </form>
+        </div>
+        <div class="col-lg-4">
+          <h3>Email</h3>
+          <p>
+            <a
+              href="mailto:claredotm@gmail.com"
+              title="Email Clare"
+              class="contact-links"
+              >✨ claredotm@gmail.com
+            </a>
+          </p>
+          <h3>LinkedIn</h3>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/clare-morgan-21588a15b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Clare's LinkedIn"
+              class="contact-links"
+            >
+              ✨ Clare Morgan
+            </a>
+          </p>
+          <h3>GitHub</h3>
+          <p>
+            <a
+              href="https://github.com/ClareMorgan"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Clare's GitHub"
+              class="contact-links"
+            >
+              ✨ github.com/ClareMorgan
+            </a>
+          </p>
+        </div>
       </div>
+    </div>
+    <footer class="mt-4">
       <div class="footer-link">
         <p>
-          ✨ This website was coded by Clare Morgan and is open-sourced on
+          This website was coded by Clare Morgan and is open-sourced on
           <a
             href="https://github.com/ClareMorgan/my-portfolio"
             target="_blank"
             title="GitHub open-source"
           >
-            GitHub </a
-          >✨
+            GitHub
+          </a>
         </p>
       </div>
     </footer>
