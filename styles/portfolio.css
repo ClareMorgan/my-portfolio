@@ -187,8 +187,18 @@ footer .social-links i:hover {
 .content h1 {
   font-size: 66px;
 }
-.avatar-image {
-  margin: 30px 10px;
+.about-me {
+  background: rgba(252, 247, 247, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+}
+.about-me p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.shecodes-description p {
+  font-size: 18px;
+  margin-bottom: 0;
 }
 .work-page-description {
   font-size: 14px;
