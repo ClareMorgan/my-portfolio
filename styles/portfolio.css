@@ -107,15 +107,6 @@ footer .secondary-btn:hover {
 footer .contact-box a {
   text-align: center;
 }
-footer .mailto-link a {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-size: 18px;
-  transition: all 200ms ease;
-}
-footer .mailto-link a:hover {
-  color: var(--secondary-color);
-}
 footer .social-links i {
   text-decoration: none;
   color: var(--accent-color);
@@ -125,6 +116,18 @@ footer .social-links i {
 }
 footer .social-links i:hover {
   transform: scale(1.4);
+}
+footer .footer-link p,
+footer .footer-link a {
+  font-size: 14px;
+}
+footer .footer-link a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: all 200ms ease;
+}
+footer .footer-link a:hover {
+  color: var(--primary-color);
 }
 .hero {
   background: rgb(252, 247, 247);
