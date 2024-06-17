@@ -173,21 +173,30 @@ form {
   color: var(--primary-color);
 }
 .project-links,
-.contact-links {
+.contact-links,
+.about-page-links {
   text-decoration: none;
   color: var(--accent-color);
-
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
   position: relative;
+}
+.project-links,
+.contact-links {
   display: block;
 }
+.about-page-links {
+  display: inline-block;
+  margin-right: 100px;
+}
 .project-links:hover,
-.contact-links:hover {
+.contact-links:hover,
+.about-page-links:hover {
   font-style: italic;
   color: var(--secondary-color);
   transform: translate(5px);
 }
-.project-links {
+.project-links,
+.about-page-links {
   font-size: 30px;
 }
 .contact-links {
@@ -259,6 +268,9 @@ form {
   .page-heading {
     font-size: 48px !important;
   }
+  .about-page-links {
+    font-size: 24px;
+  }
 }
 @media (max-width: 768px) {
   h2 {
@@ -304,6 +316,10 @@ form {
   }
   .row {
     --bs-gutter-x: 24px;
+  }
+  .about-page-links {
+    text-align: center;
+    margin: 0 30px;
   }
   .contact-links {
     font-size: 18px !important;
